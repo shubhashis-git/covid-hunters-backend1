@@ -1,0 +1,7 @@
+---
+applications:
+ - name: rest
+   random-route: true
+   path: target/rest-0.0.1-SNAPSHOT.war
+   memory: 256M
+   instances: 1
