@@ -14,7 +14,12 @@ public class RegistrationServiceImpl implements RegistrationService{
 	private RegistrationRepository repo;
 	@Override
 	public Registration addUser(Registration registration) throws Exception{
+		try{
 		return repo.save(registration);
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		return null;
 	}
 	@Override
 	public Registration login(LoginModel model) throws Exception{

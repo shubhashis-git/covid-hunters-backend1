@@ -1,13 +1,13 @@
 package com.covid.rest.model;
 
 public class LoginModel {
-	private Integer mobile;
+	private String mobile;
 
-	public Integer getMobile() {
+	public String getMobile() {
 		return mobile;
 	}
 
-	public void setMobile(Integer mobile) {
+	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 	

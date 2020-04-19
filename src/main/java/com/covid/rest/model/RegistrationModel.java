@@ -1,23 +1,30 @@
 package com.covid.rest.model;
 
 public class RegistrationModel {
-	private Integer mobile;
+	private String mobile;
 	private String firstName;
 	private String lastName;
 	private String type;
 	private String status;
 	private String image;
+	private String deviceId;
 	
+	public String getDeviceId() {
+		return deviceId;
+	}
+	public void setDeviceId(String deviceId) {
+		this.deviceId = deviceId;
+	}
 	public String getImage() {
 		return image;
 	}
 	public void setImage(String image) {
 		this.image = image;
 	}
-	public Integer getMobile() {
+	public String getMobile() {
 		return mobile;
 	}
-	public void setMobile(Integer mobile) {
+	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 	public String getFirstName() {

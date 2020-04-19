@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Conditions {
 	@Id
 	private String id;
-	private Integer mobile;
+	private String mobile;
 	private String status;
 	private Date date;
 	public String getId() {
@@ -18,10 +18,10 @@ public class Conditions {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public Integer getMobile() {
+	public String getMobile() {
 		return mobile;
 	}
-	public void setMobile(Integer mobile) {
+	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 	public String getStatus() {

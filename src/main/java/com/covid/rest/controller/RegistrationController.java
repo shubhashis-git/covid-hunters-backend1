@@ -55,6 +55,7 @@ public class RegistrationController {
 			entity.setStatus("NA");
 		}
 		entity.setImage(model.getImage().getBytes());
+		entity.setDeviceId(model.getDeviceId());
 		return entity;
 	}
 	
@@ -66,6 +67,7 @@ public class RegistrationController {
 		model.setImage(new String(entity.getImage()));
 		model.setStatus(entity.getStatus());
 		model.setType(entity.getType());
+		model.setDeviceId(entity.getDeviceId());
 		return model;
 	}
 }

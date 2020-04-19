@@ -11,13 +11,23 @@ public class Registration {
 	private String lastName;
 
 	@Id
-	private Integer mobile;
+	private String mobile;
 
 	private String type;
 
 	private byte[] image;
 
 	private String status;
+	
+	private String deviceId;
+	
+	public String getDeviceId() {
+		return deviceId;
+	}
+
+	public void setDeviceId(String deviceId) {
+		this.deviceId = deviceId;
+	}
 
 	public byte[] getImage() {
 		return image;
@@ -51,11 +61,11 @@ public class Registration {
 		this.lastName = lastName;
 	}
 
-	public Integer getMobile() {
+	public String getMobile() {
 		return mobile;
 	}
 
-	public void setMobile(Integer mobile) {
+	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
