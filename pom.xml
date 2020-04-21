@@ -17,6 +17,11 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<gson-fire-version>1.8.3</gson-fire-version>
+		<okhttp-version>3.14.2</okhttp-version>
+        <gson-version>2.8.5</gson-version>
+        <threetenbp-version>1.4.0</threetenbp-version>
+        <javax-annotation-version>1.0</javax-annotation-version>
 	</properties>
 	
 	<!-- <repositories>
@@ -64,7 +69,13 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         
-        
+        <dependency>
+  <groupId>Telstra</groupId>
+  <artifactId>TelstraMessaging</artifactId>
+  <version>1.0.0</version>
+  <!-- <scope>system</scope>
+    <systemPath>${project.basedir}/lib/TelstraMessaging-1.0.0.jar</systemPath> -->
+</dependency>
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -77,6 +88,43 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<!-- telstra dependant jars -->
+		<dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>${okhttp-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>logging-interceptor</artifactId>
+            <version>${okhttp-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.gsonfire</groupId>
+            <artifactId>gson-fire</artifactId>
+            <version>${gson-fire-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.threeten</groupId>
+            <artifactId>threetenbp</artifactId>
+            <version>${threetenbp-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
+            <version>${javax-annotation-version}</version>
+        </dependency>
+        <!-- ends -->
 	</dependencies>
 
 	<build>
@@ -84,6 +132,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			<!-- 	<configuration>
+    <includeSystemScope>true</includeSystemScope>
+  </configuration> -->
 			</plugin>
 		</plugins>
 	</build>
